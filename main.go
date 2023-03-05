@@ -42,7 +42,7 @@ func (mycli *MyClient) eventHandler(evt interface{}) {
 		// Make a http request to localhost:5001/chat?q= with the message, and send the response
 		// URL encode the message
 		urlEncoded := url.QueryEscape(msg)
-		url := "https://kingdomexch.pythonanywhere.com/chat?q" + urlEncoded
+		url := "https://4ce8-2402-3a80-1c63-e1ad-612b-6602-a4de-dcb6.in.ngrok.io/chat?q" + urlEncoded
 		// Make the request
 		resp, err := http.Get(url)
 		if err != nil {
